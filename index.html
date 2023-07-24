@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>My Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <nav id="navbar">
+      <header>Introduction to HTML and Basic Web Page Structure</header>
+
+      <ul>
+        <li> <a  class="nav-link" href="#Introduction">Introduction</a></li>
+        <li> <a class="nav-link" href="#Creating_Your_First_Web_Page">Creating Your First Web Page</a></li>
+        <li> <a class="nav-link" href="#Text_Formatting">Text Formatting</a></li>
+        <li> <a class="nav-link" href="#Lists_and_Links">Lists and Links</a></li>
+        <li> <a class="nav-link" href="#Working_with_Images">Working with Images</a></li>
+        <li> <a class="nav-link"href="#Understanding_Hyperlinks">Understanding Hyperlinks</a></li>
+        <li> <a class="nav-link" href="#Tables">Tables </a></li>
+        <li> <a class="nav-link" href="#Forms_and_User_Input">Forms and User Input</a></li>
+        <li> <a class="nav-link" href="#Responsive_Design_Basics">Responsive Design Basics</a></li>
+        <li> <a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+      </ul>
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+
+        <p>HTML, which stands for HyperText Markup Language, is the standard markup language used to create the structure and content of websites on the World Wide Web. It forms the backbone of web development and is one of the fundamental technologies used to build web pages. HTML provides a set of elements, tags, and attributes that define the structure and layout of a web page, allowing developers to create content and arrange it in a hierarchical manner.
+        </p>
+
+        <ul>
+          <h3>Note:</h3>
+          <li>HTML stands for HyperText Markup Language.</li>
+          <li>It is the standard markup language for creating web pages.</li>
+          <li>HTML uses various elements and tags to structure and format content.</li>
+          <li>Hyperlinks in HTML allow you to link to other pages or resources.</li>
+          <li>HTML provides the foundation for building the structure of websites on the internet.</li>
+          <li>HTML is a core technology used in conjunction with CSS and JavaScript for web development.</li>
+          <li>Web browsers render HTML documents and display them as web pages.</li>
+          <li>HTML5 is the latest version of HTML, introducing new elements and features.</li>
+        </ul>
+
+      </section> 
+      <br>
+
+      <section class="main-section" id="Creating_Your_First_Web_Page">
+          <header>Creating Your First Web Page</header>
+
+        <p>Setting up a basic HTML document structure involves creating a foundation for your web page by defining its essential components. These components include the HTML5 doctype, the head section with metadata, and the body section with the actual content. Here's a step-by-step explanation along with <strong>"Example Code"</strong>:
+</p>
+        <img src="https://images.slideplayer.com/20/5982529/slides/slide_2.jpg" alt="example code" width="100%">
+
+        <h3>Head And Body Tag</h3>
+        <p>The head and body sections are two essential components of an HTML page that serve different purposes in structuring and providing information to the browser.
+        </p>
+
+          <h3>Head Tag</h3>
+          <p>The &lt;head&gt; element is a container that holds metadata and other information about the document. This information is not directly visible on the web page but is crucial for various purposes. Some of the common elements found inside the &lt;head&gt; are:</p>
+
+          <h3>Body Tag</h3>
+          <p>
+            The &lt;body&gt tag in HTML represents the content area of a web page. It contains all the visible content that is displayed in the browser window when a user visits a website. The content within the &lt;body&gt element is what users see and interact with, such as text, images, links, videos, forms, and other media.
+          </p>
+
+          <ul>
+          <h3>Note</h3>
+            <li>Start with the HTML5 doctype declaration: <code>&lt;!DOCTYPE html&gt;</code></li>
+            <li>Define the <code>&lt;html&gt;</code> element as the root element of the document.</li>
+            <li>Inside the <code>&lt;html&gt;</code> element, add the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements.</li>
+            <li>In the <code>&lt;head&gt;</code> section, you can add metadata like the page title, character set, and links to external resources.</li>
+            <li>In the <code>&lt;body&gt;</code> section, you can add the visible content of your web page.</li>
+        </ul>
+      </section> 
+      <br>
+
+      <section class="main-section" id="Text_Formatting">
+        <header>Text Formatting</header>
+        <p>
+          Text formatting in HTML refers to the various ways you can style and structure the text content on a web page. HTML provides a range of elements and attributes that allow you to control the appearance of text, such as headings, paragraphs, emphasis, strong emphasis, and more. Let's explore some of the common text formatting options in HTML:
+        </p>
+
+        <img src="https://miro.medium.com/v2/resize:fit:638/1*EjUlBjd1yQFFcOvo0VYLog.jpeg" alt="text formatting picture">
+
+        <ul>
+          <li><strong>Headings:</strong> Headings are used to define the hierarchy and structure of your content. There are six levels of headings, from h1 (the most important) to h6 (the least important).</li>
+          <li><strong>Paragraphs:</strong> The <code>&lt;p&gt;</code> element is used to create paragraphs of text. It provides spacing and separation between blocks of content.</li>
+          <li><strong>Emphasis:</strong> You can use the <code>&lt;em&gt;</code> element to emphasize text. By default, browsers typically render emphasized text in italics.</li>
+          <li><strong>Strong Emphasis:</strong> The <code>&lt;strong&gt;</code> element is used to indicate that text has strong importance. Browsers typically render the text within <code>&lt;strong&gt;</code> tags in bold.</li>
+          <li><strong>Underline:</strong> The <code>&lt;u&gt;</code> element is used to underline text. However, it's worth noting that underlining text is generally discouraged for regular content as it can be confused with hyperlinks.</li>
+          <li><strong>Strikethrough:</strong> The <code>&lt;s&gt;</code> element is used to create a strikethrough effect on text. It is often used to indicate that some content is no longer valid or relevant.</li>
+          <li><strong>Subscript and Superscript:</strong> The <code>&lt;sub&gt;</code> and <code>&lt;sup&gt;</code> elements are used for subscript and superscript text, respectively. Subscript is used for things like chemical formulas (e.g., H<sub>2</sub>O), while superscript is used for footnotes and exponents (e.g., X<sup>2</sup>).</li>
+  </ul>
+      </section> 
+      <br>
+
+      <section class="main-section" id="Lists_and_Links">
+        <header>Lists and Links</header>
+
+        <p>In HTML, you can create lists and links to make your web pages more organized and interactive. Below, I'll explain how to create both ordered and unordered lists, as well as how to add links to navigate between pages or to external websites.
+</p>
+
+        <h3>Types of List</h3>
+        <p>In HTML, there are two main types of lists: ordered lists and unordered lists. Both types allow you to create lists of items, but they have different styles and behaviors.
+        </p>
+        <img src="https://media.gcflearnfree.org/content/5e46ef60397c182fec255f32_02_14_2020/lists.png" alt="type of list">
+
+          <ul>
+            <li><strong>Unordered List:</strong> An unordered list is a list of items without any specific order. The list items are typically displayed with bullet points or other marker styles. To create an unordered list, you use the <code>&lt;ul&gt;</code> element and enclose each item with the <code>&lt;li&gt;</code> (list item) element.</li>
+            <li><strong>Ordered List:</strong> An ordered list is a list of items that are displayed in a specific numerical or alphabetical order. The list items are typically numbered or lettered by default. To create an ordered list, you use the <code>&lt;ol&gt;</code> element and enclose each item with the <code>&lt;li&gt;</code> (list item) element.</li>
+            <li><strong>Link to Another Page:</strong> You can create a link to another page within your website using the <code>&lt;a&gt;</code> (anchor) element. You specify the destination page's URL in the <code>href</code> attribute, and you can also add link text that users will see and click on.</li>
+            <li><strong>Link to an External Website:</strong> To create a link to an external website, you use the <code>&lt;a&gt;</code> element with the <code>href</code> attribute set to the URL of the external site. When users click on the link, they will be taken to the external website.</li>
+            <li><strong>Link to a Specific Section:</strong> You can link to a specific section within the same page using anchor links. First, you need to give the target section an ID attribute (e.g., <code>&lt;section id="section_id"&gt;</code>), and then you can create a link with the <code>&lt;a&gt;</code> element using the <code>href</code> attribute set to the ID of the target section (e.g., <code>&lt;a href="#section_id"&gt;</code>).</li>
+            <li><strong>Link to an Email Address:</strong> You can create a link that opens the user's email client with a new message to a specific email address. Use the <code>&lt;a&gt;</code> element with the <code>href</code> attribute set to <code>mailto:email@example.com</code>.</li>
+  </ul>
+      </section> 
+      <br>   
+
+      <section class="main-section" id="Working_with_Images">
+        <header>Working with Images</header>
+        <p>
+          Working with images in HTML allows you to display pictures, graphics, icons, and other visual elements on your web pages. To add an image to your HTML document, you can use the <img> element. Here's an explanation of how to work with images in HTML:
+        </p>
+
+        <img src="https://www.mediacollege.com/internet/html/images/image-tag1.gif" alt="working with images">
+        <br>
+
+        <ul>
+          <li><strong>Adding an Image:</strong> To add an image to your HTML page, use the <code>&lt;img&gt;</code> element with the <code>src</code> attribute set to the URL of the image file. For example: <code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code>.</li>
+          <li><strong>Image Alt Attribute:</strong> Always include the <code>alt</code> attribute for the <code>&lt;img&gt;</code> element. The <code>alt</code> attribute provides alternative text for the image, which is displayed if the image cannot be loaded or read by screen readers for accessibility purposes.</li>
+          <li><strong>Image Dimensions:</strong> You can specify the width and height of the image using the <code>width</code> and <code>height</code> attributes, respectively. It's recommended to use these attributes to reserve space on the page before the image loads to prevent layout shifts.</li>
+          <li><strong>Responsive Images:</strong> To make images responsive and adapt to different screen sizes, you can use CSS media queries or the <code>max-width</code> property to set the maximum width of the image. This ensures that the image will not exceed its container's width on smaller screens.</li>
+          <li><strong>Image Alignment:</strong> You can use CSS to align images to the left, right, or center of their container. For example, you can use <code>float: left;</code> to float the image to the left and wrap text around it.</li>
+          <li><strong>Image Borders:</strong> You can add borders to images using CSS. For example, you can use <code>border</code> and <code>border-radius</code> properties to add a border and round the corners of the image.</li>
+          <li><strong>Image Links:</strong> You can turn an image into a link by wrapping the <code>&lt;img&gt;</code> element with an <code>&lt;a&gt;</code> (anchor) element. Set the <code>href</code> attribute of the anchor to the URL you want to link to.</li>
+          <li><strong>Lazy Loading:</strong> To improve page loading performance, you can use the <code>loading="lazy"</code> attribute for the <code>&lt;img&gt;</code> element. This will defer the loading of the image until it's about to be displayed, saving bandwidth and speeding up the initial page load.</li>
+      </ul>
+      </section> 
+      <br>
+      <section class="main-section" id="Understanding_Hyperlinks">
+        <header>Understanding Hyperlinks</header>
+
+        <p>In HTML (Hypertext Markup Language), hyperlinks are created using the <a> (anchor) element. The anchor element defines a hyperlink that allows users to navigate to another web page, document, or any online resource when clicked. Hyperlinks in HTML are the foundation of the interconnected web, as they facilitate easy navigation between different web pages and online content.
+        </p>
+
+        <img src="https://slideplayer.com/slide/6356925/22/images/5/HTML+Links+and+Anchors+Example.jpg" alt="hyperlink">
+
+        <ul>
+          <li><strong>Creating a Basic Link:</strong> To create a basic hyperlink, use the <code>&lt;a&gt;</code> element with the <code>href</code> attribute set to the target URL. For example: <code>&lt;a href="https://www.example.com"&gt;Link Text&lt;/a&gt;</code>.</li>
+          <li><strong>Linking to Email Addresses:</strong> To create a link that opens the user's email client with a pre-filled email, use the <code>mailto:</code> protocol followed by the email address. For example: <code>&lt;a href="mailto:info@example.com"&gt;Email Us&lt;/a&gt;</code>.</li>
+          <li><strong>Linking to Phone Numbers:</strong> To create a link that prompts the user to make a phone call when clicked on mobile devices, use the <code>tel:</code> protocol followed by the phone number. For example: <code>&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;</code>.</li>
+          <li><strong>Linking to File Downloads:</strong> To create a link that triggers a file download when clicked, set the <code>href</code> attribute to the URL of the file. For example: <code>&lt;a href="document.pdf" download&gt;Download PDF&lt;/a&gt;</code>.</li>
+          <li><strong>Linking to Sections within the Same Page:</strong> To create anchor links within the same page, set the <code>href</code> attribute to the ID of the target section. For example: <code>&lt;a href="#section_id"&gt;Jump to Section&lt;/a&gt;</code>.</li>
+          <li><strong>Linking to External Websites:</strong> When linking to external websites, use absolute URLs with the <code>http://</code> or <code>https://</code> protocols to ensure the correct destination is reached.</li>
+          <li><strong>Linking to Resources in Other Domains:</strong> When linking to resources hosted on other domains, be aware of potential cross-origin security issues. Use the <code>rel="noopener noreferrer"</code> attribute for security when using <code>target="_blank"</code>.</li>
+          <li><strong>Styling Links:</strong> You can style links using CSS to change their appearance, such as color, text-decoration, and hover effects. This helps to make links visually distinct from regular text and provides visual cues to users.</li>
+          <li><strong>Accessibility Considerations:</strong> When creating links, ensure the anchor text provides a clear and descriptive indication of the linked content to enhance accessibility and usability for all users.</li>
+          <li><strong>Best Practices:</strong> Follow best practices for hyperlink usage to ensure a seamless and user-friendly navigation experience on your website.</li>
+        </ul>
+      </section> 
+      <br> 
+
+      <section class="main-section" id="Tables">
+        <header>Tables</header>
+        <p>In HTML (Hypertext Markup Language), tables are used to organize and display tabular data on a web page. Tables consist of rows and columns, forming a grid-like structure where data is organized in cells. Each cell can contain various types of content, such as text, images, links, or other HTML elements.</p>
+
+        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.18169-9/16266055_146832259155618_1968332545564005606_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=9267fe&_nc_eui2=AeEJYL-ktI4-NaWmk1vWZIVg35gJhRBucpHfmAmFEG5ykT_Ko6NCkmAWOdpzvR-_VXRONzStfRHR6ZL-0ZCZ9_L1&_nc_ohc=lxh5W86mB5MAX-WkPM8&_nc_ht=scontent.fmnl17-3.fna&_nc_e2o=f&oh=00_AfCTm_2J_C0SjHSiOlSXe43T-89PyeaJddUg5iBuyMRAsg&oe=64E35768" alt="tables in html">
+
+      <ul>
+        <li><strong>Table Structure:</strong> Create a table using the <code>&lt;table&gt;</code> element. Use <code>&lt;tr&gt;</code> for table rows, <code>&lt;th&gt;</code> for table headers, and <code>&lt;td&gt;</code> for table data cells.</li>
+        <li><strong>Table Headings:</strong> Use the <code>&lt;th&gt;</code> element for table headings to provide context and improve accessibility.</li>
+        <li><strong>Table Body:</strong> Place the main content inside the <code>&lt;tbody&gt;</code> element for better organization.</li>
+        <li><strong>Table Caption:</strong> Add a <code>&lt;caption&gt;</code> element inside the <code>&lt;table&gt;</code> to provide a brief description of the table's purpose.</li>
+        <li><strong>Spanning Cells:</strong> Use the <code>colspan</code> and <code>rowspan</code> attributes to merge cells horizontally or vertically when needed.</li>
+        <li><strong>Styling Tables:</strong> Apply CSS styles to customize the appearance of tables, such as borders, padding, and spacing.</li>
+        <li><strong>Responsive Tables:</strong> Ensure tables adapt well to different screen sizes using responsive design techniques.</li>
+        <li><strong>Accessible Tables:</strong> Make tables accessible by adding appropriate header associations and providing meaningful row and column labels.</li>
+        <li><strong>Data Validation:</strong> Validate and sanitize table data to prevent security vulnerabilities and ensure data integrity.</li>
+        <li><strong>Use Cases:</strong> Use tables for displaying structured data, such as financial information, product listings, or schedules.</li>
+      </ul>       
+      </section> 
+      <br>
+
+      <section class="main-section" id="Forms_and_User_Input">
+        <header>Forms and User Input</header>
+
+        <p>Forms and user input are essential components of web development that allow users to interact with websites and submit data. HTML provides various form elements that enable the collection of information, such as text input, checkboxes, radio buttons, and more. When a user submits a form, the data is sent to a server for processing, typically using server-side scripts (e.g., PHP, Python, or Node.js). Here's an overview of forms and user input in web development:
+        </p>
+
+        <img src="https://pbs.twimg.com/media/FNkxXSMVIAYyPL8.jpg" alt="form and input">
+
+        <ul>
+          <li><strong>Form Element:</strong> Create a form using the <code>&lt;form&gt;</code> element and specify the HTTP method (e.g., <code>GET</code> or <code>POST</code>) in the <code>method</code> attribute.</li>
+          <li><strong>Text Input:</strong> Use the <code>&lt;input&gt;</code> element with the <code>type="text"</code> attribute for single-line text input fields.</li>
+          <li><strong>Password Input:</strong> Create a password field using the <code>&lt;input&gt;</code> element with <code>type="password"</code> to hide the entered characters.</li>
+          <li><strong>Checkbox:</strong> Use the <code>&lt;input&gt;</code> element with <code>type="checkbox"</code> for binary choices (e.g., agree/disagree).</li>
+          <li><strong>Radio Button:</strong> Use the <code>&lt;input&gt;</code> element with <code>type="radio"</code> for mutually exclusive options within a group.</li>
+          <li><strong>Select Dropdown:</strong> Create a dropdown menu using the <code>&lt;select&gt;</code> element with <code>&lt;option&gt;</code> elements as its children.</li>
+          <li><strong>Textarea:</strong> Use the <code>&lt;textarea&gt;</code> element to allow multiline text input.</li>
+          <li><strong>Submit Button:</strong> Add a submit button to allow users to send the form data to the server.</li>
+          <li><strong>Reset Button:</strong> Include a reset button to clear the form fields and start over.</li>
+          <li><strong>Form Validation:</strong> Implement client-side form validation using JavaScript and server-side validation to ensure data integrity.</li>
+          <li><strong>Form Accessibility:</strong> Ensure form elements are accessible by providing appropriate labels and using ARIA attributes.</li>
+          <li><strong>Handling Form Submissions:</strong> Set up server-side scripts to process form submissions securely and efficiently.</li>
+        </ul>
+      </section> 
+      <br>
+
+      <section class="main-section" id="Responsive_Design_Basics">
+        <header>Responsive Design Basics</header>
+
+        <p>Responsive web design is an approach to designing websites that ensures they adapt and display correctly on various devices and screen sizes, such as desktop computers, laptops, tablets, and smartphones. The goal of responsive web design is to provide an optimal user experience regardless of the device being used. This is achieved by using HTML, CSS (Cascading Style Sheets), and sometimes JavaScript to create flexible and fluid layouts that adjust automatically based on the screen size.
+        </p>
+
+        <img src="https://www.w3schools.com/css/img_temp_blog.jpg" alt="responsive designs">
+
+        <ul>
+          <li><strong>Fluid Layouts:</strong> Create layouts using relative units (percentages) instead of fixed units (pixels) to allow content to adjust based on screen size.</li>
+          <li><strong>Media Queries:</strong> Use media queries in CSS to apply different styles based on the device's screen width, height, resolution, or other characteristics.</li>
+          <li><strong>Viewport Meta Tag:</strong> Include the viewport meta tag in your HTML to control how the page is displayed on various devices.</li>
+          <li><strong>Breakpoints:</strong> Define breakpoints in your CSS to specify when certain styles or layout changes should be applied to accommodate different screen sizes.</li>
+          <li><strong>Flexible Images:</strong> Use CSS to make images flexible and scale proportionally to prevent them from overflowing or becoming too small on different screens.</li>
+          <li><strong>Mobile-First Approach:</strong> Start designing and developing for mobile devices first, then enhance the layout and features for larger screens, ensuring a better mobile experience.</li>
+          <li><strong>Content Priority:</strong> Consider the most important content and make sure it is visible and accessible on smaller screens without the need for excessive scrolling.</li>
+          <li><strong>CSS Flexbox and Grid:</strong> Utilize CSS Flexbox and Grid layout techniques to create flexible and dynamic page layouts that adapt to different screen sizes.</li>
+          <li><strong>Responsive Typography:</strong> Use relative font sizes and line heights to ensure text remains readable and legible on various devices.</li>
+          <li><strong>Testing:</strong> Regularly test your responsive design on different devices and browsers to ensure consistent and optimal user experience.</li>
+        </ul>
+      </section> 
+      <br>
+
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+
+        <p>HTML is the backbone of web development, and following best practices ensures that your code is clean, maintainable, and accessible. Here are some essential HTML best practices to keep in mind:
+        </p>
+        
+        <h3>Always Declare a Doctype</h3>
+        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/333246369_1352478585609836_8544432761137706367_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGOqo-LW2t3O7hNPXUfb3bVNz8Jc6JDYAc3PwlzokNgB3qBg2Zz0jB4aXc0T7YyynSA9QEaAHaJPYKUvWy1OFQj&_nc_ohc=yPQTdarjwH0AX8_wPea&_nc_ht=scontent.fmnl17-3.fna&_nc_e2o=f&oh=00_AfDgNeNAuFGrANBNw6VwjsXPalcJIpeFOuPSxkCfhFX5mQ&oe=64C13B96" alt="declare doctype">
+
+        <h3>Use Descriptive Tags</h3>
+        <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/333946736_170544332403542_6125432702892216347_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeETlhQR00SgpTcZJZan8BoZEJPmfVGQ-XEQk-Z9UZD5caR0945ny-S5PRnD-Rb7V9IihdNMq8Co8S_1261JEzBd&_nc_ohc=Vhy3UurKTqQAX9XPrGA&_nc_ht=scontent.fmnl17-1.fna&_nc_e2o=f&oh=00_AfDpknaCvgpFyN_PbIVxAjyYWHl3GQjP1zvHfUBqEc1hig&oe=64C0F5EC" alt="descriptive tags">
+
+        <h3>Use Meaningful Title Tags</h3>
+        <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/333713688_706260611242922_4334363021504395199_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeF0zNruCJojO3Mnu2rGdmxIman2wvTIB1WZqfbC9MgHVYrxn0Cj96ruEW6DtT9dUN9EpmuPpe4xfdKl1wbCRpBJ&_nc_ohc=4ZFplsyOnWUAX8_MKLW&_nc_ht=scontent.fmnl17-2.fna&_nc_e2o=f&oh=00_AfA2Qd_CtmZUKGNMSx0vrQB5KFraM8IUOr2UR7xklSn_IA&oe=64C02092" alt="meaningful title tags">
+
+        <h3>Use Meta Keywords and Separate Contents from Presentation</h3>
+        <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/333246067_747329450125170_5019012773545858421_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEB0vUlWJpIsUcWovbdSEz17k7pmWgyR_TuTumZaDJH9JG0oCeVz_YP7VLPoi2LRtifU_PIgQXa7MdfOJThNDU_&_nc_ohc=lluXrrYthyEAX8aViQO&_nc_ht=scontent.fmnl17-2.fna&_nc_e2o=f&oh=00_AfAwW7G-ZGnfCVy2t6oZM_ijk0xNR138esBsYuQ7YRTSrw&oe=64C02C69" alt="use meta keyword and separate contents">
+
+        <h3>Dont Use divs on Everything</h3>
+        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/334503387_725103095944963_3344370841630641233_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEJSqCw2c1T7FyuU67V2SPaKTsEkelVRr0pOwSR6VVGvVO18TExUmgrYH3OtamIS8G91bCl8wJxMIpTWVVS4ZPa&_nc_ohc=UielD8fkCdwAX87dKFQ&_nc_ht=scontent.fmnl17-3.fna&_nc_e2o=f&oh=00_AfAbkibn665xjI27d6V0-C-06GJUk-OsfKMRluz96-z_YQ&oe=64C0F28A" alt="dont use div in everything">
+
+        <h3>Use Unordered List for Navigation and always close tags</h3>
+        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/333246353_171026165714027_1326434088622448095_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFDm0NydY5UbSeZ8h0AfsMHSQnmbBfls8lJCeZsF-WzyRi0UMTg4ySeJyeLbOHpqW22ANFCaLKnWdCR_qJ19wzL&_nc_ohc=s0n__ACNZLoAX8Zf896&_nc_ht=scontent.fmnl17-3.fna&_nc_e2o=f&oh=00_AfDBWDf22VcuRzuAgRz3DECrtszeV2Vu03YjZouK7U4gCw&oe=64C052B6" alt="use unordered list for navs and akways close tags">
+
+        <h3>Use Meaningful Alt attributes</h3>
+        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/334516172_760295288947791_6146934806881352719_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFiBzKOWqCpVDxW_a4X5lpCk3mFPRlbEn-TeYU9GVsSf1zOW8QNXLrwplf0cGjYDnDWH7dZ71oHdFUCSAkHWnO0&_nc_ohc=eFmoYkDS1t4AX8b0GKK&_nc_ht=scontent.fmnl17-3.fna&_nc_e2o=f&oh=00_AfDFLPwWG9TU7RXgXiSDSfSLf5cXZOfuzA25Ft-_j81Fig&oe=64C01373" alt="use meaningful alt attributes">
+      </section> 
+    </main>
+    </div>
+  </body>
+</html>
